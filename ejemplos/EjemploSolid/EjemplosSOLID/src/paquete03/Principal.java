@@ -17,11 +17,24 @@ public class Principal {
         taxi.establecerCooperativaTaxi("Yahuarcuna");
         taxi.establecerTarifa();
         
+        TransporteTransvia transvia = new TransporteTransvia();
+        transvia.establecerNombreTransvia("Tranvia Loja");
+        transvia.establecerTarifa();
+
         TiposTransporte tipos = new TiposTransporte();
         tipos.establecerTransporteBus(bus);
         tipos.establecerTransporteTaxi(taxi);
+        tipos.establecerTransporteTransvia(transvia);
         tipos.establecerPromedioTarifas();
+
+        System.out.printf("Promedio de Tarifas: %.2f\n",
+        tipos.obtenerPromedioTarifas());
         
+    /*  tipos.establecerTransporteBus(bus);
+        tipos.establecerTransporteTaxi(taxi);
+        tipos.establecerTransporteTranvia(transvia);
+        tipos.establecerPromedioTarifas();
+    */    
         System.out.printf("Promedio de Tarifas: %.2f", 
                 tipos.obtenerPromedioTarifas());
         
