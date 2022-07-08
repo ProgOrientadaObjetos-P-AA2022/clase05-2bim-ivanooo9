@@ -4,6 +4,7 @@
 package paquete04;
 
 import java.util.ArrayList;
+import paquete03.TransporteTransvia;
 
 //Cambios .8 . julio -2022
 
@@ -21,6 +22,10 @@ public class Principal {
         TransporteTaxi taxi = new TransporteTaxi();
         taxi.establecerCooperativaTaxi("Yahuarcuna");
         taxi.establecerTarifa();
+        
+        TransporteTransvia transvia = new TransporteTransvia();
+        transvia.establecerNombreTransvia("Tranvia Loja");
+        transvia.establecerTarifa();
         
         TiposTransporte tipos = new TiposTransporte();
         ArrayList <Transporte> transportes = new ArrayList<>();
