@@ -15,34 +15,34 @@ public class TarjetaCredito {
     private String nombre;
     private int cuponMax;
 
-    public TarjetaCredito(int code, String name, int cupMax) {
-       codigo = codigo;
-        nombre = nombre;
-        cuponMax = cuponMax;
+    public TarjetaCredito(String name, int code, int cupMax) {
+       codigo = code;
+        nombre = name;
+        cuponMax = cupMax;
     }
 
     public int obtenerCodigo() {
         return codigo;
     }
 
-    public void establecerCodigo(int codigo) {
-        codigo = codigo;
+    public void establecerCodigo(int code) {
+        codigo = code;
     }
 
     public String obtenerNombre() {
         return nombre;
     }
 
-    public void establecerNombre(String nombre) {
-        nombre = nombre;
+    public void establecerNombre(String name ) {
+        nombre = name;
     }
 
     public int obtenerCuponMax() {
         return cuponMax;
     }
 
-    public void establecerCuponMax(int cuponMax) {
-        cuponMax = cuponMax;
+    public void establecerCuponMax(int cupMax) {
+        cuponMax = cupMax;
     }
     
    

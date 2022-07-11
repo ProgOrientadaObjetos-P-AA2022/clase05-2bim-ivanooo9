@@ -9,17 +9,19 @@ package paquete06;
  */
 public class Principal {
     public static void main(String[] args) {
-        
-    //  TarjetaCredito tarjeta = new  TarjetaCredito("Joseph", tarjeta);
-        
-        MayorEdad representante = new MayorEdad("José", tarjeta);
-        
-        MenorEdad menor = new MenorEdad("Felipe", representante);
-        
-        
-        System.out.printf("Nombre:%s - Tarjeta:%s\n",
-                menor.obtenerNombre(), 
-                menor.obtenerRepresentante().obtenerTarjeta());
-        
+
+    TarjetaCredito tarjeta = new TarjetaCredito("Jose", 1234, 6);
+
+    MayorEdad representante = new MayorEdad("José", tarjeta);
+
+    MenorEdad menor = new MenorEdad("Felipe", representante);
+
+    System.out.printf("Nombre:%s - Tarjeta: %s - Codigo: %d - "
+    + "Cupon Maximo: %d\n",
+    menor.obtenerNombre(),
+    menor.obtenerRepresentante().obtenerTarjeta().obtenerNombre(),
+    menor.obtenerRepresentante().obtenerTarjeta().obtenerCodigo(),
+    menor.obtenerRepresentante().obtenerTarjeta().obtenerCuponMax());
+
     }
 }
