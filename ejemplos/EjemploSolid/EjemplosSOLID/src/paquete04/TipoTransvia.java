@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package paquete04;
+import java.util.ArrayList;
 
 /**
  *
@@ -14,7 +15,7 @@ public class TipoTransvia {
     private String TransporteTransvia;
     private double tarifa;
     
-    public void establecerCooperativaTaxi(String n){
+    public void establecerNombreTransvia(String n){
        TransporteTransvia = n;
     }
     
@@ -22,7 +23,7 @@ public class TipoTransvia {
         tarifa = 0.40 + (0.40*0.5);
     }
     
-    public String obtenerCooperativaTaxi(){
+    public String obtenerNombreTransvia(){
         return TransporteTransvia;
     }
     

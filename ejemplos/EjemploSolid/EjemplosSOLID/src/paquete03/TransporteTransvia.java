@@ -14,7 +14,7 @@ public class TransporteTransvia {
     private String TransporteTransvia;
     private double tarifa;
     
-    public void establecerCooperativaTaxi(String n){
+    public void establecerNombreTransvia(String n){
        TransporteTransvia = n;
     }
     
@@ -22,7 +22,7 @@ public class TransporteTransvia {
         tarifa = 0.40 + (0.40*0.5);
     }
     
-    public String obtenerCooperativaTaxi(){
+    public String obtenerNombreTransvia(){
         return TransporteTransvia;
     }
     

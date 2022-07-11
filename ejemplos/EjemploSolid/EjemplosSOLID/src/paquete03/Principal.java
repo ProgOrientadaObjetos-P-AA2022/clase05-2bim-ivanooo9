@@ -24,7 +24,7 @@ public class Principal {
         TiposTransporte tipos = new TiposTransporte();
         tipos.establecerTransporteBus(bus);
         tipos.establecerTransporteTaxi(taxi);
-        tipos.establecerTransporteTransvia(transvia);
+        tipos.establecerTransporteTranvia(transvia);
         tipos.establecerPromedioTarifas();
 
         System.out.printf("Promedio de Tarifas: %.2f\n",
