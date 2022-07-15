@@ -11,10 +11,12 @@ package paquete10;
  */
 public class Principal3 {
     public static void main(String[] args) {
-        // Presentar los objetos del archivo serializado
+       String  nombreArchivo = "Generadores.datos" ;
         
+        ArchivoLectura  lectura = new  ArchivoLectura ( nombreArchivo );
         
-        
-        
+        lectura.establecerGeneradores ();
+        System.out.println(lectura);
+
     }
 }

@@ -10,11 +10,11 @@ package paquete10;
  * @author SALA I
  */
 public class APiDirectvGO implements APIMovie{
-private String apiKey;
-    
+
+    private String apiKey;
     @Override
     public void establecerApiKey(String ak){
-        apiKey = ak+123123;
+        apiKey = ak+"154263";
     }
     
     @Override
@@ -23,3 +23,4 @@ private String apiKey;
     }
     
 }
+
